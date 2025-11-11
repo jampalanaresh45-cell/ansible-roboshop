@@ -1,0 +1,11 @@
+- name: create ec2 and r53
+  hosts: local
+  connection: local
+  vars: 
+    ami_id: ami-09c813fb71547fc4f
+    sg_id: sg-0d6582f979a774c93
+    zone_id: "Z002601621GCC3UL69CM8"
+    domain_name: "daws86s.store"
+  tasks: 
+  - name: create ec2 instance
+  
