@@ -7,7 +7,6 @@
     zone_id: "Z002601621GCC3UL69CM8"
     domain_name: "daws86s.store"
     # we can pass instances through command line using -e
-    
 
     # instances:
     # - mongodb
