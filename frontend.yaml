@@ -11,7 +11,7 @@
   - name: install nginx
     ansible.builtin.dnf: 
       name: nginx
-      start: present
+      state: present
 
   - name: remove html directory
     ansible.builtin.file:
