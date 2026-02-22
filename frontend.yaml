@@ -25,16 +25,16 @@
 
   - name: download frontend application
     ansible.builtin.get_url:
-      url: https://roboshop-artifacts.s3.amazonaws.com/catalogue-v3.zip
+      url: https://roboshop-artifacts.s3.amazonaws.com/frontend-v3.zip
       dest: /tmp/frontend.zip
 
-  - name: extract catalogue application
+  - name: extract frontend application
     ansible.builtin.unarchive:
       src: /tmp/frontend.zip
       dest: /usr/share/nginx/html
       remote_src: yes
 
-  - name: remove default nginx conf
+  - name: delete default nginx conf
     ansible.builtin.file:
       state: absent
       path: /etc/nginx/nginx.conf

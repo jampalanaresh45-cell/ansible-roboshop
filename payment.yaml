@@ -10,6 +10,7 @@
       - python3
       - gcc 
       - python3-devel
+
   - name: create roboshop system user
     ansible.builtin.user:
       name: roboshop
@@ -37,7 +38,7 @@
 
   - name: download payment application
     ansible.builtin.get_url:
-      url: https://roboshop-artifacts.s3.amazonaws.com/shipping-v3.zip
+      url: https://roboshop-artifacts.s3.amazonaws.com/payment-v3.zip
       dest: /tmp/payment.zip
 
   - name: extract payment application
